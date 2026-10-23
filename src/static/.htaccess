@@ -1,0 +1,51 @@
+# Apache (Hostinger) nustatymai: HTTPS, saugumo antraštės, podėlis, suspaudimas
+
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+AddDefaultCharset UTF-8
+AddType image/svg+xml .svg
+AddType font/woff2 .woff2
+AddType application/manifest+json .webmanifest
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Visada HTTPS
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Be www
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+  # Senos svetainės adresai → nauji
+  RewriteRule ^sections/ / [L,R=301]
+  RewriteRule ^index\.html$ / [L,R=301]
+  RewriteRule ^(en|lt)/index\.html$ /$1/ [L,R=301]
+  RewriteRule ^(en|lt)$ /$1/ [L,R=301]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set Content-Security-Policy "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
+  Header unset X-Powered-By
+
+  # Podėlis: HTML trumpai, statiniai failai ilgai (versija nurodoma ?v=)
+  <FilesMatch "\.(html|xml|txt)$">
+    Header set Cache-Control "public, max-age=600, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(css|js|woff2|svg|jpg|jpeg|png|webp|pdf)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/xml image/svg+xml
+</IfModule>
