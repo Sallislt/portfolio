@@ -176,7 +176,7 @@ function render(c) {
     .map((l) => {
       const repo = site.github && repos[l.key] ? `${site.github}/${repos[l.key]}` : null;
       const link = repo
-        ? `<a class="lab-link" href="${repo}" target="_blank" rel="noopener">${icon('github', 'icon icon-xs')}${esc(repos[l.key])}</a>`
+        ? `<a class="lab-link" href="${repo}" target="_blank" rel="noopener">${icon('github', 'icon icon-xs')}${esc(repos[l.key])}${l.key === 'site' ? ` · ${t(c.projects.sourceCode)}` : ''}</a>`
         : '';
       return `<article class="lab reveal"><h4>${t(l.name)}</h4><p>${t(l.text)}</p>${tags(l.key)}${link}</article>`;
     })

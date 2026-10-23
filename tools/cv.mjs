@@ -133,7 +133,7 @@ const html = `<!doctype html>
       </p>
       <span class="badge">Disponible immédiatement · Recherche : ${t(c.hero.roles.join(' · '))}</span>
     </div>
-    <div class="qr"><img src="../../src/static/assets/img/qr.svg" alt=""><span>Portfolio</span></div>
+    <div class="qr"><img src="../../src/static/assets/img/qr.svg" alt=""><span>Site web</span></div>
     <div class="photo"><img src="../../src/static/assets/img/profile.jpg" alt=""></div>
   </header>
 

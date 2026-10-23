@@ -93,6 +93,8 @@ export const repos = {
   scripts: 'ad-user-provisioning',
   site: 'portfolio',
   netLab: 'network-segmentation-lab',
+  glpi: 'glpi-incident-management',
+  crypto: 'crypto-security-labs',
 };
 
 // Technologijų žymos projektams (vienodos visomis kalbomis)
@@ -106,4 +108,6 @@ export const stacks = {
   linux: ['Ubuntu', 'Debian', 'Apache', 'MySQL', 'Bash'],
   scripts: ['PowerShell', 'Bash', 'Python'],
   site: ['HTML', 'CSS', 'CSP', 'HSTS', 'Schema.org', 'Node.js'],
+  glpi: ['GLPI', 'ITIL', 'Service Desk', 'Tickets', 'SLA'],
+  crypto: ['OpenSSL', 'RSA', 'SHA-256', 'TLS', 'Nessus', 'Wireshark'],
 };
