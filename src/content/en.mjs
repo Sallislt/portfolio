@@ -175,6 +175,7 @@ export default {
       },
     ],
     labsTitle: 'Homelab & exercises',
+    githubCta: 'See the code on GitHub',
     labs: [
       { key: 'adLab', name: 'Windows Server & Active Directory lab', text: 'Virtualised Windows Server 2019 domain: users, groups, OUs, GPOs, shares and NTFS permissions.' },
       { key: 'network', name: 'Segmented, secured network', text: 'VLANs, secure Wi-Fi, NAS, isolated IP cameras, network printers, automated backups; 50+ devices configured.' },
@@ -203,8 +204,8 @@ export default {
           'Work up to 183 m high on the towers of La Défense, Paris',
         ],
         missions: [
-          { org: 'Sky Scrapper', period: '2021 – 2025 · since 03/2025', text: 'Team lead. Window and façade cleaning (pressure washing), dust removal, installing fall-protection nets (people and objects) and bird nets, painting, masonry, façade inspection, waterproofing and leak detection.' },
-          { org: 'Red Sky', period: '01/2025 – 03/2025', text: 'Rope access window and façade cleaning (pressure washing).' },
+          { org: 'Sky Scrapper', period: '2021 – 2025 · since 03/2025', text: 'Team lead. Window cleaning, high-pressure façade cleaning (Kärcher), dust removal, installing fall-protection nets (people and objects) and bird nets, painting, masonry, façade inspection, waterproofing and leak detection.' },
+          { org: 'Red Sky', period: '01/2025 – 03/2025', text: 'Rope access window cleaning and high-pressure façade cleaning (Kärcher).' },
           { org: 'Vertigo', period: '09/2018 – 08/2021', text: 'High-rise rope access cleaning up to 183 m: Tour CBX, Tour Europe, Opus 12 and other towers at La Défense.' },
         ],
       },

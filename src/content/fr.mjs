@@ -175,6 +175,7 @@ export default {
       },
     ],
     labsTitle: 'Homelab & exercices',
+    githubCta: 'Voir le code sur GitHub',
     labs: [
       { key: 'adLab', name: 'Lab Windows Server & Active Directory', text: 'Domaine Windows Server 2019 virtualisé : utilisateurs, groupes, unités d’organisation, GPO, partages et droits NTFS.' },
       { key: 'network', name: 'Réseau segmenté et sécurisé', text: 'VLAN, Wi-Fi sécurisé, NAS, caméras IP isolées, imprimantes réseau, sauvegardes automatisées ; 50+ équipements configurés.' },
@@ -203,8 +204,8 @@ export default {
           'Travaux jusqu’à 183 m de hauteur sur les tours de La Défense',
         ],
         missions: [
-          { org: 'Sky Scrapper', period: '2021 – 2025 · depuis 03/2025', text: 'Chef d’équipe. Nettoyage de vitres et de façades (Kärcher), dépoussiérage, pose de filets antichute (personnes et objets) et anti-volatiles, peinture, maçonnerie, inspection de façades, étanchéité et recherche de fuites.' },
-          { org: 'Red Sky', period: '01/2025 – 03/2025', text: 'Nettoyage de vitres et de façades sur cordes (Kärcher).' },
+          { org: 'Sky Scrapper', period: '2021 – 2025 · depuis 03/2025', text: 'Chef d’équipe. Nettoyage de vitres, nettoyage de façades au nettoyeur haute pression (Kärcher), dépoussiérage, pose de filets antichute (personnes et objets) et anti-volatiles, peinture, maçonnerie, inspection de façades, étanchéité et recherche de fuites.' },
+          { org: 'Red Sky', period: '01/2025 – 03/2025', text: 'Nettoyage de vitres et nettoyage de façades au nettoyeur haute pression (Kärcher), sur cordes.' },
           { org: 'Vertigo', period: '09/2018 – 08/2021', text: 'Nettoyage en grande hauteur sur cordes, jusqu’à 183 m : Tour CBX, Tour Europe, Opus 12 et autres tours de La Défense.' },
         ],
       },

@@ -129,6 +129,7 @@ const html = `<!doctype html>
         <span>Permis A et B, véhiculé</span>
         <a href="${site.url}">${site.url.replace('https://', '')}</a>
         <a href="${site.linkedin}">linkedin.com/in/saulius-stankevicius</a>
+        ${site.github ? `<a href="${site.github}">${site.github.replace('https://', '')}</a>` : ''}
       </p>
       <span class="badge">Disponible immédiatement · Recherche : ${t(c.hero.roles.join(' · '))}</span>
     </div>

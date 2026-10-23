@@ -174,6 +174,7 @@ export default {
       },
     ],
     labsTitle: 'Namų laboratorija ir pratybos',
+    githubCta: 'Kodas GitHub platformoje',
     labs: [
       { key: 'adLab', name: 'Windows Server ir Active Directory laboratorija', text: 'Virtualizuotas Windows Server 2019 domenas: naudotojai, grupės, OU, GPO, bendrinami aplankai ir NTFS teisės.' },
       { key: 'network', name: 'Segmentuotas ir apsaugotas tinklas', text: 'VLAN, saugus Wi-Fi, NAS, izoliuotos IP kameros, tinkliniai spausdintuvai, automatinės atsarginės kopijos; sukonfigūruota 50+ įrenginių.' },
@@ -202,8 +203,8 @@ export default {
           'Darbai iki 183 m aukštyje La Défense dangoraižiuose',
         ],
         missions: [
-          { org: 'Sky Scrapper', period: '2021 – 2025 · nuo 2025-03', text: 'Komandos vadovas. Langų ir fasadų valymas (Kärcher), dulkių valymas, apsauginių tinklų nuo kritimo (žmonėms ir daiktams) bei nuo paukščių montavimas, dažymas, mūro darbai, fasadų apžiūra, hidroizoliacija ir nuotėkių paieška.' },
-          { org: 'Red Sky', period: '2025-01 – 2025-03', text: 'Langų ir fasadų valymas su virvėmis (Kärcher).' },
+          { org: 'Sky Scrapper', period: '2021 – 2025 · nuo 2025-03', text: 'Komandos vadovas. Langų valymas, fasadų plovimas aukšto slėgio plovykle (Kärcher), dulkių valymas, apsauginių tinklų nuo kritimo (žmonėms ir daiktams) bei nuo paukščių montavimas, dažymas, mūro darbai, fasadų apžiūra, hidroizoliacija ir nuotėkių paieška.' },
+          { org: 'Red Sky', period: '2025-01 – 2025-03', text: 'Langų valymas ir fasadų plovimas aukšto slėgio plovykle (Kärcher), dirbant su virvėmis.' },
           { org: 'Vertigo', period: '2018-09 – 2021-08', text: 'Valymo darbai su virvėmis iki 183 m aukštyje: Tour CBX, Tour Europe, Opus 12 ir kiti La Défense dangoraižiai.' },
         ],
       },

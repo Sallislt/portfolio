@@ -34,6 +34,7 @@ const icons = {
   mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
   phone: '<path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2Z"/>',
   linkedin: '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/>',
+  github: '<path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6.2 0C6.6 2.8 5.6 3.1 5.6 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/>',
   pin: '<path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/>',
   download: '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
@@ -74,7 +75,7 @@ function jsonLd(c, lang) {
       addressRegion: site.region,
       addressCountry: site.country,
     },
-    sameAs: [site.linkedin],
+    sameAs: [site.linkedin, site.github].filter(Boolean),
     knowsLanguage: ['fr', 'en', 'lt'],
     knowsAbout: [
       'IT support', 'Windows Server', 'Active Directory', 'Linux', 'Computer networking', 'VLAN',
@@ -336,6 +337,7 @@ function render(c) {
         </header>
         <div class="projects">${featured}</div>
         <h3 class="sub-title reveal">${t(c.projects.labsTitle)}</h3>
+        ${site.github ? `<p class="reveal"><a class="btn btn-ghost" href="${site.github}" target="_blank" rel="noopener">${icon('github', 'icon icon-sm')}${t(c.projects.githubCta)}</a></p>` : ''}
         <div class="labs">${labs}</div>
       </div>
     </section>
@@ -392,6 +394,7 @@ function render(c) {
             <button class="copy-btn" type="button" data-copy="${site.email}" data-done="${t(c.ui.copied)}" aria-label="${t(c.ui.copy)} ${esc(site.email)}">${icon('copy', 'icon icon-sm')}<span>${t(c.ui.copy)}</span></button></li>
           <li>${icon('phone', 'icon icon-badge')}<div><span class="muted">${t(c.contact.phone)}</span><a href="tel:${site.phoneHref}">${esc(site.phone)}</a></div></li>
           <li>${icon('linkedin', 'icon icon-badge')}<div><span class="muted">${t(c.contact.linkedin)}</span><a href="${site.linkedin}" target="_blank" rel="noopener me">linkedin.com/in/saulius-stankevicius</a></div></li>
+          ${site.github ? `<li>${icon('github', 'icon icon-badge')}<div><span class="muted">GitHub</span><a href="${site.github}" target="_blank" rel="noopener me">${esc(site.github.replace('https://', ''))}</a></div></li>` : ''}
           <li>${icon('pin', 'icon icon-badge')}<div><span class="muted">${t(c.contact.location)}</span><span>${t(c.contact.locationValue)}</span></div></li>
         </ul>
       </div></div>

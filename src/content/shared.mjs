@@ -7,6 +7,8 @@ export const site = {
   phone: '+33 6 99 63 07 20',
   phoneHref: '+33699630720',
   linkedin: 'https://www.linkedin.com/in/saulius-stankevicius/',
+  // GitHub profilis: įrašyti adresą, kai paskyra sukurta (null = nerodoma)
+  github: null,
   cv: '/assets/Saulius_Stankevicius_CV.pdf',
   photo: '/assets/img/profile.jpg',
   ogImage: '/assets/img/og.png',
