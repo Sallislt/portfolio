@@ -237,6 +237,9 @@ button { font: inherit; color: inherit; }
   background: #ffffff;
 }
 
+/* Kalbų perjungiklis mobiliajame meniu (kompiuteryje jis yra viršutinėje juostoje) */
+.nav .nav-langs { display: none; }
+
 /* QR kodas rodomas tik spausdinant */
 .print-qr { display: none; }
 .brand-name { display: none; }
@@ -297,10 +300,13 @@ button { font: inherit; color: inherit; }
 
 @media (max-width: 960px) {
   .menu-btn { display: grid; }
-  .topbar .langs { display: none; }
+  .topbar .langs:not(.nav-langs) { display: none; }
   .nav {
-    position: fixed;
-    inset: var(--topbar-h) 0 auto 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 60;
     padding: 8px var(--gutter) 20px;
     background: var(--bg);
     border-bottom: 1px solid var(--border);
@@ -312,6 +318,9 @@ button { font: inherit; color: inherit; }
   }
   .nav.is-open { opacity: 1; transform: none; visibility: visible; }
   .nav ul { flex-direction: column; }
+  .topbar .nav-langs { display: flex; width: fit-content; margin: 12px 12px 0; }
+  .nav-langs .lang-link { padding: 10px 16px; font-size: 0.85rem; }
+  .icon-btn { width: 44px; height: 44px; }
   .nav a { padding: 12px; font-size: 1rem; }
   .tools { margin-inline-start: auto; }
 }

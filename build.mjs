@@ -1,7 +1,8 @@
 // Statinės svetainės generatorius: src/content/*.mjs + šablonas → dist/
 // Paleidimas: node build.mjs
 
-import { cp, mkdir, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { site, languages, certGroups, stacks, repos } from './src/content/shared.mjs';
 import fr from './src/content/fr.mjs';
 import en from './src/content/en.mjs';
@@ -9,6 +10,16 @@ import lt from './src/content/lt.mjs';
 
 const OUT = new URL('./dist/', import.meta.url);
 const contents = { fr, en, lt };
+
+// Podėlio versija: failų turinio kontrolinė suma. Pakeitus CSS ar JS, adresas pasikeičia automatiškai,
+// todėl lankytojų naršyklės nelieka su sena versija (serveris leidžia saugoti failus 30 dienų).
+const hashOf = async (path) =>
+  createHash('sha256').update(await readFile(new URL(path, import.meta.url))).digest('hex').slice(0, 8);
+const ver = {
+  css: await hashOf('./src/static/assets/css/style.css'),
+  theme: await hashOf('./src/static/assets/js/theme.js'),
+  main: await hashOf('./src/static/assets/js/main.js'),
+};
 
 // Sertifikatų skaičius skaičiuojamas automatiškai
 const certCount = certGroups.reduce((n, g) => n + g.items.length + (g.highlight ? 1 : 0), 0);
@@ -257,9 +268,9 @@ function render(c) {
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/style.css?v=${site.updated}">
-  <script src="/assets/js/theme.js?v=${site.updated}"></script>
-  <script src="/assets/js/main.js?v=${site.updated}" defer></script>
+  <link rel="stylesheet" href="/assets/css/style.css?v=${ver.css}">
+  <script src="/assets/js/theme.js?v=${ver.theme}"></script>
+  <script src="/assets/js/main.js?v=${ver.main}" defer></script>
   <script type="application/ld+json">${JSON.stringify(jsonLd(c, lang))}</script>
 </head>
 <body>
@@ -270,6 +281,7 @@ function render(c) {
       <a class="brand" href="${lang.path}" aria-label="${esc(site.name)}"><img class="brand-mark" src="/assets/img/logo-mark.svg" width="36" height="36" alt=""><span class="brand-name">Saulius Stankevicius</span></a>
       <nav class="nav" id="nav" aria-label="${t(c.ui.menu)}">
         <ul>${nav}</ul>
+        <div class="langs nav-langs" role="group" aria-label="${t(c.ui.lang)}">${langSwitch}</div>
       </nav>
       <div class="tools">
         <div class="langs" role="group" aria-label="${t(c.ui.lang)}">${langSwitch}</div>
