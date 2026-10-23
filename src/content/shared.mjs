@@ -73,9 +73,10 @@ export const certGroups = [
     platform: null,
     highlight: null,
     items: [
-      { name: 'IT Security Foundations: Network Security', date: '2025-08-01', url: null },
-      { name: 'Cybersecurity: Key Policies and Resources', date: '2025-08-01', url: null },
-      { name: 'AWS Certified Cloud Practitioner (CLF-C02) Cert Prep 1: Cloud Concepts', date: '2025-01-01', url: null },
+      { name: 'Cybersecurity Foundations', date: '2025-07-20', url: null },
+      { name: 'IT Security Foundations: Network Security', date: '2025-08-10', url: null },
+      { name: 'Cybersecurity: Key Policies and Resources', date: '2025-08-04', url: null },
+      { name: 'AWS Certified Cloud Practitioner (CLF-C02) Cert Prep 1: Cloud Concepts', date: '2025-07-20', url: null },
       { name: 'Introduction to Artificial Intelligence (AI) – IBM', date: '2025-07-01', url: 'https://www.coursera.org/account/accomplishments/verify/DI4W60MUWJ6K' },
     ],
   },

@@ -187,7 +187,11 @@ function render(c) {
     .join('');
 
   const education = c.journey.education
-    .map((e) => `<li><p class="tl-period">${t(e.period)}</p><h4>${t(e.degree)}</h4><p class="tl-org">${t(e.school)}</p></li>`)
+    .map(
+      (e) => `<li><p class="tl-period">${t(e.period)}</p><h4>${t(e.degree)}</h4><p class="tl-org">${
+        e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${t(e.school)}</a>` : t(e.school)
+      }</p>${e.note ? `<p class="edu-note">${t(e.note)}</p>` : ''}</li>`
+    )
     .join('');
 
   const langs = c.journey.languages

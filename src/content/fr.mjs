@@ -270,9 +270,16 @@ export default {
     education: [
       { degree: 'Licence Informatique (BAC+3), en cours', school: 'VILNIUS TECH (VGTU), Lituanie', period: '2025 – 2027' },
       { degree: 'CQP Cordiste niveau 2 (aujourd’hui « Cordiste confirmé »)', school: 'Certification professionnelle, France', period: '2023' },
-      { degree: 'Bachelor Réseaux & Administration Systèmes (BAC+3)', school: 'Kauno Kolegija, Lituanie', period: '2006 – 2009' },
-      { degree: 'Classe de programmation', school: 'École des jeunes informaticiens (JKM) de l’université KTU, Kaunas', period: '2005 – 2006' },
-      { degree: 'Classe d’informatique', school: 'Centre de création technique pour élèves (MTKC), Kaunas', period: '2003 – 2004' },
+      { degree: 'CQP Cordiste niveau 1', school: 'Certification professionnelle, France', period: '2016' },
+      {
+        degree: 'Bachelor professionnel en ingénierie informatique — Administration des réseaux (BAC+3, 180 ECTS), qualification d’ingénieur',
+        school: 'Kauno Kolegija, établissement public d’enseignement supérieur, Lituanie',
+        url: 'https://kaunokolegija.lt/english/',
+        note: 'Réseaux informatiques, sécurité des réseaux, systèmes Windows et Linux, bases de données, programmation, systèmes d’exploitation et matériel.',
+        period: '2006 – 2009',
+      },
+      { degree: 'Classe de programmation (Delphi)', school: 'École des jeunes informaticiens (JKM) de l’université KTU, Kaunas', url: 'https://jkm.ktu.edu/c-sharp/?mokymai-klasems=vienuoliktokams', period: '2005 – 2006' },
+      { degree: 'Classe d’informatique', school: 'Centre de création technique pour élèves (MTKC), Kaunas', url: 'https://www.mtkc.lt/', period: '2003 – 2004' },
     ],
     languages: [
       { name: 'Français', level: 'Courant — C1', pct: 85 },

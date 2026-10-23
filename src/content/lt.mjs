@@ -269,9 +269,16 @@ export default {
     education: [
       { degree: 'Informatikos bakalauras (studijuoju)', school: 'VILNIUS TECH (VGTU)', period: '2025 – 2027' },
       { degree: 'CQP Cordiste 2 lygis (dabar „Cordiste confirmé“)', school: 'Profesinis sertifikatas, Prancūzija', period: '2023' },
-      { degree: 'Kompiuterių tinklų administravimo profesinis bakalauras', school: 'Kauno kolegija', period: '2006 – 2009' },
-      { degree: 'Programavimo klasė', school: 'Jaunųjų kompiuterininkų mokykla (JKM) prie KTU, Kaunas', period: '2005 – 2006' },
-      { degree: 'Informatikos klasė', school: 'Moksleivių techninės kūrybos centras (MTKC), Kaunas', period: '2003 – 2004' },
+      { degree: 'CQP Cordiste 1 lygis', school: 'Profesinis sertifikatas, Prancūzija', period: '2016' },
+      {
+        degree: 'Informatikos inžinerijos profesinis bakalauras — kompiuterių tinklų administravimas (180 ECTS), inžinieriaus kvalifikacija',
+        school: 'Kauno kolegija, Technologijų fakultetas',
+        url: 'https://kaunokolegija.lt/english/',
+        note: 'Kompiuterių tinklai, tinklų sauga, MS Windows ir Linux sistemos, duomenų bazės, programavimas, operacinės sistemos ir kompiuterių aparatinė įranga.',
+        period: '2006 – 2009',
+      },
+      { degree: 'Programavimo klasė (Delphi)', school: 'Jaunųjų kompiuterininkų mokykla (JKM) prie KTU, Kaunas', url: 'https://jkm.ktu.edu/c-sharp/?mokymai-klasems=vienuoliktokams', period: '2005 – 2006' },
+      { degree: 'Informatikos klasė', school: 'Moksleivių techninės kūrybos centras (MTKC), Kaunas', url: 'https://www.mtkc.lt/', period: '2003 – 2004' },
     ],
     languages: [
       { name: 'Lietuvių', level: 'Gimtoji', pct: 100 },

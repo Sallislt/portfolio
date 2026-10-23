@@ -235,18 +235,18 @@ export default {
       },
       {
         role: 'Web & communication specialist',
-        org: 'Kauno Kolegija, Public Relations and Communication Office',
+        org: 'Kauno kolegija Higher Education Institution, Public Relations and Communication Office',
         place: 'Kaunas, Lithuania',
         start: '2009',
         end: '2010',
         bullets: [
           'Researching and introducing innovations for the college website',
-          'Representing Kauno Kolegija to the public',
+          'Representing Kauno kolegija to the public',
         ],
       },
       {
         role: 'Student volunteering: web, video and communication',
-        org: 'Kauno Kolegija Students’ Association (KKSA)',
+        org: 'Kauno kolegija Students’ Association (KKSA)',
         place: 'Kaunas, Lithuania',
         start: '2006',
         end: '2009',
@@ -270,9 +270,16 @@ export default {
     education: [
       { degree: 'BSc Computer Science, in progress', school: 'VILNIUS TECH (VGTU), Lithuania', period: '2025 – 2027' },
       { degree: 'CQP Rope Access Technician level 2 (now “Cordiste confirmé”)', school: 'French professional certification', period: '2023' },
-      { degree: 'Professional Bachelor, Networks & Systems Administration', school: 'Kauno Kolegija, Lithuania', period: '2006 – 2009' },
-      { degree: 'Programming class', school: 'Young Programmers’ School (JKM) at KTU, Kaunas', period: '2005 – 2006' },
-      { degree: 'Computer science class', school: 'Pupils’ Technical Creativity Centre (MTKC), Kaunas', period: '2003 – 2004' },
+      { degree: 'CQP Rope Access Technician level 1', school: 'French professional certification', period: '2016' },
+      {
+        degree: 'Professional Bachelor in Informatics Engineering — Computer Network Administration (180 ECTS), qualification of Engineer',
+        school: 'Kauno kolegija Higher Education Institution, Lithuania',
+        url: 'https://kaunokolegija.lt/english/',
+        note: 'Computer networks, network security, Windows and Linux systems, databases, programming, operating systems and hardware.',
+        period: '2006 – 2009',
+      },
+      { degree: 'Programming class (Delphi)', school: 'Young Programmers’ School (JKM) at KTU, Kaunas', url: 'https://jkm.ktu.edu/c-sharp/?mokymai-klasems=vienuoliktokams', period: '2005 – 2006' },
+      { degree: 'Computer science class', school: 'Pupils’ Technical Creativity Centre (MTKC), Kaunas', url: 'https://www.mtkc.lt/', period: '2003 – 2004' },
     ],
     languages: [
       { name: 'English', level: 'Professional — C2', pct: 95 },

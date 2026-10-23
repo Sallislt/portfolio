@@ -796,6 +796,9 @@ button { font: inherit; color: inherit; }
 .edu { display: grid; gap: 18px; }
 .edu li { display: grid; gap: 3px; }
 .edu h4 { font-size: 1rem; }
+.edu .tl-org a { color: inherit; text-decoration-color: var(--border-strong); }
+.edu .tl-org a:hover { color: var(--accent); }
+.edu-note { font-size: 0.88rem; color: var(--muted); margin-top: 4px; }
 
 .lang-list { display: grid; gap: 16px; }
 .lang-row { display: flex; justify-content: space-between; gap: 12px; font-weight: 600; margin-bottom: 6px; }
