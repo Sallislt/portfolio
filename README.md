@@ -26,6 +26,7 @@ build.mjs              générateur : contenu + gabarit → dist/
 src/content/           textes FR / EN / LT, certifications, coordonnées
 src/static/            CSS, JS, polices, images, .htaccess, robots.txt
 tools/images.mjs       image Open Graph et icône générées avec Chrome headless
+tools/cv.mjs           CV PDF (FR) généré à partir des mêmes données que le site
 docs/DIEGIMAS-LT.md    procédure de mise en ligne (lituanien)
 ```
 
@@ -34,6 +35,7 @@ docs/DIEGIMAS-LT.md    procédure de mise en ligne (lituanien)
 ```bash
 node build.mjs               # génère dist/
 node tools/images.mjs        # régénère og.png et apple-touch-icon.png
+node tools/cv.mjs            # régénère le CV PDF
 python -m http.server 8020 --directory dist
 ```
 
