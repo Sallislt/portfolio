@@ -96,7 +96,7 @@ export default {
     ],
     facts: [
       ['Localisation', 'Orgeval (78) — mobilité Île-de-France'],
-      ['Disponibilité', 'Immédiate'],
+      ['Disponibilité', 'Immédiate — études à distance compatibles avec un emploi'],
       ['Permis', 'A et B, véhiculé'],
       ['Langues', 'Français C1 · Anglais C2 · Lituanien natif'],
     ],
@@ -268,7 +268,13 @@ export default {
       },
     ],
     education: [
-      { degree: 'Licence Informatique (BAC+3), en cours', school: 'VILNIUS TECH (VGTU), Lituanie', period: '2025 – 2027' },
+      {
+        degree: 'Licence en informatique — Technologies de l’information, en cours (à distance)',
+        school: 'VILNIUS TECH, Université technique Gediminas de Vilnius, Lituanie',
+        url: 'https://vilniustech.lt/en/study-programme/information-technologies-549969-l-454/',
+        note: 'Cloud computing, cryptographie et sécurité de l’information, gestion de bases de données, technologies Internet, gouvernance des SI, génie logiciel.',
+        period: '09/2025 – 06/2027 (prévu)',
+      },
       { degree: 'CQP Cordiste niveau 2 (aujourd’hui « Cordiste confirmé »)', school: 'Certification professionnelle, France', period: '2023' },
       { degree: 'CQP Cordiste niveau 1', school: 'Certification professionnelle, France', period: '2016' },
       {

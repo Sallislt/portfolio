@@ -96,7 +96,7 @@ export default {
     ],
     facts: [
       ['Location', 'Orgeval (78), west of Paris — mobile across Île-de-France'],
-      ['Availability', 'Immediate'],
+      ['Availability', 'Immediate — distance-learning degree compatible with a full-time job'],
       ['Driving licence', 'A and B, own vehicle'],
       ['Languages', 'English C2 · French C1 · Lithuanian native'],
     ],
@@ -268,7 +268,13 @@ export default {
       },
     ],
     education: [
-      { degree: 'BSc Computer Science, in progress', school: 'VILNIUS TECH (VGTU), Lithuania', period: '2025 – 2027' },
+      {
+        degree: 'Bachelor of Informatics — Information Technologies, in progress (part-time, distance learning)',
+        school: 'VILNIUS TECH, Vilnius Gediminas Technical University, Lithuania',
+        url: 'https://vilniustech.lt/en/study-programme/information-technologies-549969-l-454/',
+        note: 'Cloud computing, cryptography and information security, database management, Internet technologies, IT governance, software engineering.',
+        period: '09/2025 – 06/2027 (expected)',
+      },
       { degree: 'CQP Rope Access Technician level 2 (now “Cordiste confirmé”)', school: 'French professional certification', period: '2023' },
       { degree: 'CQP Rope Access Technician level 1', school: 'French professional certification', period: '2016' },
       {

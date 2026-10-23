@@ -95,7 +95,7 @@ export default {
     ],
     facts: [
       ['Vieta', 'Orgeval (78), į vakarus nuo Paryžiaus'],
-      ['Pasiekiamumas', 'Iš karto'],
+      ['Pasiekiamumas', 'Iš karto — nuotolinės studijos netrukdo dirbti'],
       ['Vairuotojo pažymėjimas', 'A ir B kategorijos, turiu automobilį'],
       ['Kalbos', 'Lietuvių gimtoji · Anglų C2 · Prancūzų C1'],
     ],
@@ -267,7 +267,13 @@ export default {
       },
     ],
     education: [
-      { degree: 'Informatikos bakalauras (studijuoju)', school: 'VILNIUS TECH (VGTU)', period: '2025 – 2027' },
+      {
+        degree: 'Informacinės technologijos, informatikos bakalauras (studijuoju nuotoliu)',
+        school: 'VILNIUS TECH, Fundamentinių mokslų fakultetas',
+        url: 'https://vilniustech.lt/stojantiesiems/studiju-programos/informacines-technologijos-549969-l-454/',
+        note: 'Debesų kompiuterija, kriptografija ir informacijos sauga, duomenų bazių valdymas, interneto technologijos, IT valdymas, programų inžinerija.',
+        period: '2025-09 – 2027-06 (planuojama)',
+      },
       { degree: 'CQP Cordiste 2 lygis (dabar „Cordiste confirmé“)', school: 'Profesinis sertifikatas, Prancūzija', period: '2023' },
       { degree: 'CQP Cordiste 1 lygis', school: 'Profesinis sertifikatas, Prancūzija', period: '2016' },
       {
