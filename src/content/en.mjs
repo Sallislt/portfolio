@@ -33,7 +33,7 @@ export default {
     copy: 'Copy',
     copied: 'Copied!',
     verify: 'Verify',
-    print: 'Print / PDF',
+    print: 'Printable version (CV PDF)',
     backTop: 'Back to top',
     present: 'present',
     photoAlt: 'Portrait of Saulius Stankevicius',

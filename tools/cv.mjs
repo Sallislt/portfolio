@@ -81,7 +81,7 @@ const html = `<!doctype html>
   :root { --ink: #0c1324; --soft: #2c3548; --muted: #5b6579; --line: #dfe4ee; --accent: #2149e8; --tint: #f1f4fb; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font: 8.9pt/1.42 Inter, 'Segoe UI', Arial, sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  header { display: grid; grid-template-columns: 1fr 26mm; gap: 6mm; align-items: center; padding-bottom: 4mm; border-bottom: 2px solid var(--ink); }
+  header { display: grid; grid-template-columns: 1fr 21mm 26mm; gap: 5mm; align-items: center; padding-bottom: 4mm; border-bottom: 2px solid var(--ink); }
   h1 { font-size: 21pt; font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; }
   .title { font-size: 11pt; font-weight: 600; color: var(--soft); margin-top: 1.5mm; }
   .title b { color: var(--accent); font-weight: 600; }
@@ -90,6 +90,8 @@ const html = `<!doctype html>
   .badge { display: inline-block; margin-top: 2.5mm; padding: 0.8mm 2.5mm; border-radius: 99px; background: #e8f6ee; color: #15803d; font-weight: 600; font-size: 8pt; }
   .photo { width: 26mm; height: 26mm; border-radius: 50%; overflow: hidden; }
   .photo img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.27); }
+  .qr { text-align: center; font-size: 6.8pt; color: var(--muted); }
+  .qr img { width: 21mm; height: 21mm; display: block; }
   .profile { margin: 3.5mm 0 1mm; color: var(--soft); font-size: 9.2pt; }
   .cols { display: grid; grid-template-columns: 1fr 62mm; gap: 7mm; }
   h2 { font-size: 8.4pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin: 4.5mm 0 2mm; padding-bottom: 1mm; border-bottom: 1px solid var(--line); }
@@ -130,6 +132,7 @@ const html = `<!doctype html>
       </p>
       <span class="badge">Disponible immédiatement · Recherche : ${t(c.hero.roles.join(' · '))}</span>
     </div>
+    <div class="qr"><img src="../../src/static/assets/img/qr.svg" alt=""><span>Portfolio</span></div>
     <div class="photo"><img src="../../src/static/assets/img/profile.jpg" alt=""></div>
   </header>
 

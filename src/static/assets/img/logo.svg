@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="720" viewBox="0 0 600 720" role="img" aria-label="Saulius Stankevičius — dynamic S logo">
+<defs><linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#12baff"/><stop offset=".55" stop-color="#075af2"/><stop offset="1" stop-color="#063caa"/></linearGradient><linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#051b49"/><stop offset="1" stop-color="#073c98"/></linearGradient></defs>
+<!-- circular motion arc -->
+<path d="M155 385 C105 311 123 208 191 148 C259 88 372 94 440 156" fill="none" stroke="url(#blue)" stroke-width="13" stroke-linecap="round"/>
+<path d="M451 170 C502 238 489 347 425 412 C365 472 268 479 199 441" fill="none" stroke="url(#blue)" stroke-width="13" stroke-linecap="round"/>
+<!-- dynamic S ribbons -->
+<path d="M405 173 C354 137 268 144 222 185 C177 225 181 281 234 309 C266 327 316 329 339 350 C365 373 340 406 299 415 C257 424 219 407 195 385 C227 434 294 454 357 426 C425 396 432 336 377 299 C343 276 294 272 263 252 C233 232 251 207 283 191 C317 174 363 175 405 173Z" fill="url(#navy)"/>
+<path d="M405 173 C354 137 268 144 222 185 C185 219 181 258 208 289 C203 245 258 223 309 218 C349 214 385 200 405 173Z" fill="url(#blue)"/>
+<path d="M195 385 C234 409 284 410 321 389 C352 372 353 355 339 350 C365 373 340 406 299 415 C257 424 219 407 195 385Z" fill="url(#blue)"/>
+<path d="M222 302 C260 328 320 326 349 345 C386 369 364 409 321 426 C373 421 425 391 414 345 C407 313 370 295 329 287 C287 279 248 275 222 302Z" fill="url(#blue)"/>
+<text x="300" y="558" text-anchor="middle" font-family="Inter,Montserrat,Arial,sans-serif" font-size="72" font-weight="750" fill="#1263e8">Saulius</text>
+<text x="300" y="618" text-anchor="middle" font-family="Inter,Montserrat,Arial,sans-serif" font-size="46" font-weight="700" fill="#071d4b">Stankevičius</text>
+</svg>

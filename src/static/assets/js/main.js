@@ -1,4 +1,4 @@
-// Sąsajos elgsena: tema, mobilusis meniu, aktyvus skyrius, animacijos, kopijavimas, spausdinimas
+// Sąsajos elgsena: tema, mobilusis meniu, aktyvus skyrius, animacijos, kopijavimas
 (function () {
   'use strict';
 
@@ -92,10 +92,6 @@
   });
 
   // Spausdinimas: prieš tai parodomi visi animuoti elementai
-  var printBtn = document.getElementById('print-btn');
-  if (printBtn) {
-    printBtn.addEventListener('click', function () { window.print(); });
-  }
   window.addEventListener('beforeprint', function () {
     document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
   });

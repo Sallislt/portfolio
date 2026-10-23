@@ -32,7 +32,7 @@ export default {
     copy: 'Kopijuoti',
     copied: 'Nukopijuota!',
     verify: 'Patikrinti',
-    print: 'Spausdinti / PDF',
+    print: 'Spausdinama versija (CV PDF)',
     backTop: 'Į viršų',
     present: 'dabar',
     photoAlt: 'Sauliaus Stankevičiaus portretas',

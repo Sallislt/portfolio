@@ -259,7 +259,7 @@ function render(c) {
 
   <header class="topbar" id="top">
     <div class="wrap topbar-inner">
-      <a class="brand" href="${lang.path}" aria-label="${esc(site.name)}"><span class="brand-mark" aria-hidden="true">SS</span><span class="brand-name">Saulius Stankevicius</span></a>
+      <a class="brand" href="${lang.path}" aria-label="${esc(site.name)}"><img class="brand-mark" src="/assets/img/logo-mark.svg" width="36" height="36" alt=""><span class="brand-name">Saulius Stankevicius</span></a>
       <nav class="nav" id="nav" aria-label="${t(c.ui.menu)}">
         <ul>${nav}</ul>
       </nav>
@@ -283,6 +283,7 @@ function render(c) {
             <p class="kicker">${t(c.hero.lookingFor)}</p>
             <ul class="roles">${roles}</ul>
           </div>
+          <div class="print-qr"><img src="/assets/img/qr.svg" width="96" height="96" alt=""><p>saulius.elitecordiste.fr</p></div>
           <div class="cta">
             <a class="btn btn-primary" href="#contact">${t(c.ui.contactMe)}${icon('arrow', 'icon icon-sm')}</a>
             <a class="btn btn-ghost" href="${site.cv}" download>${icon('download', 'icon icon-sm')}${t(c.ui.downloadCv)}</a>
@@ -401,7 +402,7 @@ function render(c) {
     <div class="wrap footer-inner">
       <p>© ${new Date(site.updated).getFullYear()} ${esc(site.name)} · ${t(c.footer.note)} ${t(c.footer.updated)} <time datetime="${site.updated}">${esc(new Intl.DateTimeFormat(c.dateLocale, { dateStyle: 'long' }).format(new Date(site.updated)))}</time></p>
       <div class="footer-tools">
-        <button class="link-btn" type="button" id="print-btn">${icon('printer', 'icon icon-sm')}${t(c.ui.print)}</button>
+        <a class="link-btn" href="${site.cv}" target="_blank" rel="noopener">${icon('printer', 'icon icon-sm')}${t(c.ui.print)}</a>
         <div class="langs">${langSwitch}</div>
       </div>
     </div>

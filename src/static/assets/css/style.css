@@ -229,17 +229,16 @@ button { font: inherit; color: inherit; }
   white-space: nowrap;
 }
 .brand-mark {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
+  padding: 2px;
   border-radius: 10px;
-  background: var(--text);
-  color: var(--bg);
-  font-family: var(--mono);
-  font-size: 0.8rem;
-  font-weight: 700;
+  border: 1px solid var(--border);
+  background: #ffffff;
 }
+
+/* QR kodas rodomas tik spausdinant */
+.print-qr { display: none; }
 .brand-name { display: none; }
 @media (min-width: 420px) { .brand-name { display: inline; } }
 
@@ -961,9 +960,20 @@ button { font: inherit; color: inherit; }
   .js .reveal { opacity: 1 !important; transform: none !important; }
   .hero, .section { padding-block: 10pt; }
   .section-alt { border: 0; }
-  .hero-grid { grid-template-columns: 1fr 110px; gap: 16pt; }
-  .portrait { width: 110px; box-shadow: none; outline: 0; border-radius: 12px; }
-  .stats, .card, .project, .lab, .contact-box { box-shadow: none; break-inside: avoid; }
+  .stats, .card, .project, .lab, .contact-box { box-shadow: none; }
+  /* Tinklelius spausdinant paverčiame blokais: tada naršyklė gali tvarkingai skaidyti puslapius */
+  .grid-3, .projects, .labs, .certs, .journey, .contact-box, .hero-grid { display: block !important; }
+  .grid-3 > *, .projects > *, .labs > *, .certs > *, .journey-side > * { margin-bottom: 8pt; }
+  .card, .project, .lab, .tl-item, .cert-group, .edu li, .missions li, .stat, .facts > div, .contact-list li {
+    break-inside: avoid; page-break-inside: avoid;
+  }
+  h2, h3, h4, .section-head { break-after: avoid; page-break-after: avoid; }
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .hero-side, .footer, .section-intro { display: none !important; }
+  .hero-copy { position: relative; padding-right: 30mm; }
+  .print-qr { display: block; position: absolute; top: 0; right: 0; width: 26mm; text-align: center; font-size: 7pt; color: var(--muted); }
+  .print-qr img { width: 26mm; height: 26mm; }
+  .section { break-before: auto; }
   .section-head { margin-bottom: 10pt; }
   .section-head h2 { font-size: 15pt; }
   .hero h1 { font-size: 24pt; }
