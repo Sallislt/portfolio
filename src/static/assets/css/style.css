@@ -726,6 +726,18 @@ button { font: inherit; color: inherit; }
 .lab:hover { border-color: var(--border-strong); transform: translateY(-2px); }
 .lab h4 { font-size: 1rem; }
 .lab p { color: var(--muted); font-size: 0.93rem; }
+.lab-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  justify-self: start;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.lab-link:hover { text-decoration: underline; }
 
 /* ---------- Patirtis ---------- */
 .journey { display: grid; gap: 40px; }

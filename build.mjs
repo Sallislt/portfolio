@@ -2,7 +2,7 @@
 // Paleidimas: node build.mjs
 
 import { cp, mkdir, rm, writeFile } from 'node:fs/promises';
-import { site, languages, certGroups, stacks } from './src/content/shared.mjs';
+import { site, languages, certGroups, stacks, repos } from './src/content/shared.mjs';
 import fr from './src/content/fr.mjs';
 import en from './src/content/en.mjs';
 import lt from './src/content/lt.mjs';
@@ -172,7 +172,13 @@ function render(c) {
     .join('');
 
   const labs = c.projects.labs
-    .map((l) => `<article class="lab reveal"><h4>${t(l.name)}</h4><p>${t(l.text)}</p>${tags(l.key)}</article>`)
+    .map((l) => {
+      const repo = site.github && repos[l.key] ? `${site.github}/${repos[l.key]}` : null;
+      const link = repo
+        ? `<a class="lab-link" href="${repo}" target="_blank" rel="noopener">${icon('github', 'icon icon-xs')}${esc(repos[l.key])}</a>`
+        : '';
+      return `<article class="lab reveal"><h4>${t(l.name)}</h4><p>${t(l.text)}</p>${tags(l.key)}${link}</article>`;
+    })
     .join('');
 
   const experience = c.journey.experience

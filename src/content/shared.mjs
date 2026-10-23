@@ -8,7 +8,7 @@ export const site = {
   phoneHref: '+33699630720',
   linkedin: 'https://www.linkedin.com/in/saulius-stankevicius/',
   // GitHub profilis: įrašyti adresą, kai paskyra sukurta (null = nerodoma)
-  github: null,
+  github: 'https://github.com/Sallislt',
   cv: '/assets/Saulius_Stankevicius_CV.pdf',
   photo: '/assets/img/profile.jpg',
   ogImage: '/assets/img/og.png',
@@ -83,6 +83,16 @@ export const certGroups = [
     ],
   },
 ];
+
+// Laboratorijų kortelių nuorodos į GitHub saugyklas
+export const repos = {
+  adLab: 'homelab',
+  network: 'homelab',
+  siem: 'ssh-log-analyzer',
+  linux: 'linux-admin-scripts',
+  scripts: 'ad-user-provisioning',
+  site: 'portfolio',
+};
 
 // Technologijų žymos projektams (vienodos visomis kalbomis)
 export const stacks = {
