@@ -143,7 +143,7 @@ export default {
   projects: {
     kicker: 'Projects',
     title: 'Proof, not just words',
-    intro: 'Two real web applications I designed and built, plus the labs where I practise administration and security.',
+    intro: 'Two real web applications I designed and built, a Cisco network project, and the labs where I practise administration and security.',
     featuredLabel: 'Live application',
     shows: 'What it demonstrates:',
     featured: [
@@ -160,6 +160,19 @@ export default {
           'Automated test suite (Pest) covering security and business rules',
         ],
         shows: 'Application security, identity & access management, deploying and running a server.',
+      },
+      {
+        key: 'netLab',
+        name: 'Segmented network for an exam centre',
+        tag: 'Cisco Packet Tracer · semester project',
+        text: 'Network architecture for an exam centre (fictional scenario): 6 VLANs, inter-VLAN routing on a Layer 3 switch, exam room isolated by ACLs, Packet Tracer model.',
+        bullets: [
+          'Segmentation: service desk, exams, servers, VoIP, cameras, management',
+          'ACLs: exam PCs limited to the exam server and DNS, cameras limited to the NVR',
+          'Review of my own configuration: 3 bugs found and fixed (Internet access, blocked DHCP, supervisor PC)',
+          'Hardening: SSH v2, port security, BPDU guard, DHCP snooping, secured trunks',
+        ],
+        shows: 'Network design, routing and filtering, Cisco device hardening.',
       },
       {
         key: 'skyTools',

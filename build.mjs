@@ -167,6 +167,7 @@ function render(c) {
           <ul class="ticks">${p.bullets.map((b) => `<li>${t(b)}</li>`).join('')}</ul>
           <p class="shows"><strong>${t(c.projects.shows)}</strong> ${t(p.shows)}</p>
           ${tags(p.key)}
+          ${site.github && repos[p.key] ? `<a class="lab-link" href="${site.github}/${repos[p.key]}" target="_blank" rel="noopener">${icon('github', 'icon icon-xs')}${esc(repos[p.key])}</a>` : ''}
         </article>`
     )
     .join('');

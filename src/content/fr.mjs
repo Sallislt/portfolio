@@ -143,7 +143,7 @@ export default {
   projects: {
     kicker: 'Projets',
     title: 'Des preuves, pas seulement des mots',
-    intro: 'Deux applications web réelles que j’ai conçues et développées, et les labs qui me servent à pratiquer l’administration et la sécurité.',
+    intro: 'Deux applications web réelles que j’ai conçues et développées, un projet réseau Cisco, et les labs qui me servent à pratiquer l’administration et la sécurité.',
     featuredLabel: 'Application en production',
     shows: 'Ce que ça démontre :',
     featured: [
@@ -160,6 +160,19 @@ export default {
           'Suite de tests automatisés (Pest) couvrant la sécurité et les règles métier',
         ],
         shows: 'Sécurité applicative, gestion des identités et des droits, déploiement et exploitation d’un serveur.',
+      },
+      {
+        key: 'netLab',
+        name: 'Réseau segmenté d’un centre d’examens',
+        tag: 'Cisco Packet Tracer · projet de semestre',
+        text: 'Architecture réseau d’un centre d’examens (scénario fictif) : 6 VLAN, routage inter-VLAN sur un commutateur de niveau 3, salle d’examen isolée par ACL, maquette Packet Tracer.',
+        bullets: [
+          'Segmentation : accueil, examens, serveurs, VoIP, caméras, administration',
+          'ACL : postes d’examen limités au serveur d’examen et au DNS, caméras limitées au NVR',
+          'Revue de ma propre configuration : 3 erreurs trouvées et corrigées (accès Internet, DHCP bloqué, poste du surveillant)',
+          'Durcissement : SSH v2, port-security, BPDU guard, DHCP snooping, trunks sécurisés',
+        ],
+        shows: 'Conception de réseau, routage et filtrage, durcissement des équipements Cisco.',
       },
       {
         key: 'skyTools',

@@ -92,12 +92,14 @@ export const repos = {
   linux: 'linux-admin-scripts',
   scripts: 'ad-user-provisioning',
   site: 'portfolio',
+  netLab: 'network-segmentation-lab',
 };
 
 // Technologijų žymos projektams (vienodos visomis kalbomis)
 export const stacks = {
   skyScrapper: ['Laravel 13', 'PHP 8.4', 'MySQL', '2FA TOTP', 'RBAC', 'Pest', 'Tailwind', 'Alpine.js'],
   skyTools: ['Laravel', 'Livewire', 'PWA', 'Offline', 'RBAC', 'MySQL'],
+  netLab: ['Cisco IOS', 'Packet Tracer', 'VLAN', 'ACL', 'SSH', 'DHCP snooping'],
   adLab: ['Windows Server 2019', 'Active Directory', 'GPO', 'Hyper-V', 'VMware'],
   network: ['VLAN', 'Wi-Fi WPA2/3', 'NAS', 'DNS', 'DHCP', 'Backups'],
   siem: ['Splunk', 'Wireshark', 'Nmap', 'IDS/IPS', 'Python'],

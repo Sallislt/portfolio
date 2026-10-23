@@ -142,7 +142,7 @@ export default {
   projects: {
     kicker: 'Projektai',
     title: 'Įrodymai, ne tik žodžiai',
-    intro: 'Dvi realios mano sukurtos interneto programos ir laboratorijos, kuriose praktikuojuosi administravimo ir saugumo srityse.',
+    intro: 'Dvi realios mano sukurtos interneto programos, Cisco tinklo projektas ir laboratorijos, kuriose praktikuojuosi administravimo ir saugumo srityse.',
     featuredLabel: 'Veikianti programa',
     shows: 'Ką tai parodo:',
     featured: [
@@ -159,6 +159,19 @@ export default {
           'Automatinių testų rinkinys (Pest), apimantis saugumą ir verslo taisykles',
         ],
         shows: 'Programų saugumą, tapatybių ir prieigos valdymą, serverio diegimą ir priežiūrą.',
+      },
+      {
+        key: 'netLab',
+        name: 'Egzaminų centro segmentuotas tinklas',
+        tag: 'Cisco Packet Tracer · semestro projektas',
+        text: 'Egzaminų centro tinklo architektūra (išgalvotas scenarijus): 6 VLAN, maršrutizavimas tarp VLAN 3 lygio komutatoriuje, ACL izoliuota egzaminų klasė, Packet Tracer modelis.',
+        bullets: [
+          'Segmentavimas: klientų aptarnavimas, egzaminai, serveriai, VoIP, kameros, valdymas',
+          'ACL: egzaminų kompiuteriai pasiekia tik egzaminų serverį ir DNS, kameros – tik NVR',
+          'Savo konfigūracijos peržiūra: rastos ir ištaisytos 3 klaidos (interneto prieiga, užblokuotas DHCP, prižiūrėtojo kompiuteris)',
+          'Sustiprinimas: SSH v2, port-security, BPDU guard, DHCP snooping, apsaugoti trunk ryšiai',
+        ],
+        shows: 'Tinklo projektavimą, maršrutizavimą ir filtravimą, Cisco įrangos sustiprinimą.',
       },
       {
         key: 'skyTools',
