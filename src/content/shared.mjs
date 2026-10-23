@@ -88,7 +88,7 @@ export const stacks = {
   skyTools: ['Laravel', 'Livewire', 'PWA', 'Offline', 'RBAC', 'MySQL'],
   adLab: ['Windows Server 2019', 'Active Directory', 'GPO', 'Hyper-V', 'VMware'],
   network: ['VLAN', 'Wi-Fi WPA2/3', 'NAS', 'DNS', 'DHCP', 'Backups'],
-  siem: ['Splunk', 'Wireshark', 'Nmap', 'IDS/IPS', 'TryHackMe'],
+  siem: ['Splunk', 'Wireshark', 'Nmap', 'IDS/IPS', 'Python'],
   linux: ['Ubuntu', 'Debian', 'Apache', 'MySQL', 'Bash'],
   scripts: ['PowerShell', 'Bash', 'Python'],
   site: ['HTML', 'CSS', 'CSP', 'HSTS', 'Schema.org', 'Node.js'],

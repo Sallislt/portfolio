@@ -125,7 +125,7 @@ export default {
       {
         icon: 'lock',
         name: 'Cybersecurity',
-        items: ['Log analysis and SIEM: Splunk', 'Detection & response, IDS/IPS basics', 'Endpoint hardening, firewall, antivirus', 'Access management, MFA / 2FA, least privilege', 'CTF: TryHackMe, Hack The Box'],
+        items: ['Log analysis and SIEM: Splunk', 'Detection & response, IDS/IPS basics', 'Endpoint hardening, firewall, antivirus', 'Access management, MFA / 2FA, least privilege', 'Brute force detection in SSH logs (Python)'],
       },
       {
         icon: 'code',
@@ -178,7 +178,7 @@ export default {
     labs: [
       { key: 'adLab', name: 'Windows Server & Active Directory lab', text: 'Virtualised Windows Server 2019 domain: users, groups, OUs, GPOs, shares and NTFS permissions.' },
       { key: 'network', name: 'Segmented, secured network', text: 'VLANs, secure Wi-Fi, NAS, isolated IP cameras, network printers, automated backups; 50+ devices configured.' },
-      { key: 'siem', name: 'Log analysis & detection', text: 'Event searches in Splunk, traffic analysis, IDS/IPS scenarios and CTF rooms on TryHackMe.' },
+      { key: 'siem', name: 'Log analysis & detection', text: 'Event searches in Splunk, traffic analysis, IDS/IPS scenarios and an SSH log analyzer written in Python.' },
       { key: 'linux', name: 'Linux web & database server', text: 'Debian/Ubuntu: users, services, permissions, Apache and MySQL, basic hardening.' },
       { key: 'scripts', name: 'Admin scripts', text: 'PowerShell and Bash automation: account creation, inventory, clean-up, backups.' },
       { key: 'site', name: 'This website', text: 'A static multilingual site with no cookies or trackers, a CSP policy, HSTS and structured data for search engines.' },

@@ -124,7 +124,7 @@ export default {
       {
         icon: 'lock',
         name: 'Kibernetinis saugumas',
-        items: ['Žurnalų analizė ir SIEM: Splunk', 'Aptikimas ir reagavimas, IDS/IPS pagrindai', 'Darbo vietų sustiprinimas, ugniasienė, antivirusinė', 'Prieigos valdymas, MFA / 2FA, mažiausios privilegijos', 'CTF: TryHackMe, Hack The Box'],
+        items: ['Žurnalų analizė ir SIEM: Splunk', 'Aptikimas ir reagavimas, IDS/IPS pagrindai', 'Darbo vietų sustiprinimas, ugniasienė, antivirusinė', 'Prieigos valdymas, MFA / 2FA, mažiausios privilegijos', 'Slaptažodžių spėliojimo aptikimas SSH žurnaluose (Python)'],
       },
       {
         icon: 'code',
@@ -177,7 +177,7 @@ export default {
     labs: [
       { key: 'adLab', name: 'Windows Server ir Active Directory laboratorija', text: 'Virtualizuotas Windows Server 2019 domenas: naudotojai, grupės, OU, GPO, bendrinami aplankai ir NTFS teisės.' },
       { key: 'network', name: 'Segmentuotas ir apsaugotas tinklas', text: 'VLAN, saugus Wi-Fi, NAS, izoliuotos IP kameros, tinkliniai spausdintuvai, automatinės atsarginės kopijos; sukonfigūruota 50+ įrenginių.' },
-      { key: 'siem', name: 'Žurnalų analizė ir aptikimas', text: 'Įvykių paieška Splunk, srauto analizė, IDS/IPS scenarijai ir CTF užduotys TryHackMe platformoje.' },
+      { key: 'siem', name: 'Žurnalų analizė ir aptikimas', text: 'Įvykių paieška Splunk, srauto analizė, IDS/IPS scenarijai ir Python SSH žurnalų analizatorius.' },
       { key: 'linux', name: 'Linux interneto ir duomenų bazių serveris', text: 'Debian/Ubuntu: naudotojai, paslaugos, teisės, Apache ir MySQL, bazinis sustiprinimas.' },
       { key: 'scripts', name: 'Administravimo skriptai', text: 'PowerShell ir Bash automatizavimas: paskyrų kūrimas, inventorius, valymas, atsarginės kopijos.' },
       { key: 'site', name: 'Ši svetainė', text: 'Statinė daugiakalbė svetainė be slapukų ir sekiklių, su CSP politika, HSTS ir struktūrizuotais duomenimis paieškos sistemoms.' },

@@ -125,7 +125,7 @@ export default {
       {
         icon: 'lock',
         name: 'Cybersécurité',
-        items: ['Analyse de logs et SIEM : Splunk', 'Détection et réponse, notions IDS/IPS', 'Durcissement des postes, pare-feu, antivirus', 'Gestion des accès, MFA / 2FA, moindre privilège', 'CTF : TryHackMe, Hack The Box'],
+        items: ['Analyse de logs et SIEM : Splunk', 'Détection et réponse, notions IDS/IPS', 'Durcissement des postes, pare-feu, antivirus', 'Gestion des accès, MFA / 2FA, moindre privilège', 'Détection de force brute dans les journaux SSH (Python)'],
       },
       {
         icon: 'code',
@@ -178,7 +178,7 @@ export default {
     labs: [
       { key: 'adLab', name: 'Lab Windows Server & Active Directory', text: 'Domaine Windows Server 2019 virtualisé : utilisateurs, groupes, unités d’organisation, GPO, partages et droits NTFS.' },
       { key: 'network', name: 'Réseau segmenté et sécurisé', text: 'VLAN, Wi-Fi sécurisé, NAS, caméras IP isolées, imprimantes réseau, sauvegardes automatisées ; 50+ équipements configurés.' },
-      { key: 'siem', name: 'Analyse de logs & détection', text: 'Recherche d’événements dans Splunk, analyse de trafic, scénarios IDS/IPS et salles CTF sur TryHackMe.' },
+      { key: 'siem', name: 'Analyse de logs & détection', text: 'Recherche d’événements dans Splunk, analyse de trafic, scénarios IDS/IPS et analyseur de journaux SSH en Python.' },
       { key: 'linux', name: 'Serveur Linux web & base de données', text: 'Debian/Ubuntu : utilisateurs, services, permissions, Apache et MySQL, durcissement de base.' },
       { key: 'scripts', name: 'Scripts d’administration', text: 'Automatisation PowerShell et Bash : création de comptes, inventaire, nettoyage, sauvegardes.' },
       { key: 'site', name: 'Ce site', text: 'Site statique multilingue, sans cookies ni traceurs, avec politique CSP, HSTS et données structurées pour le référencement.' },

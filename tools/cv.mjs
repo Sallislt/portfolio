@@ -22,9 +22,7 @@ const profile =
   'Treize ans de travaux en hauteur, dont dix comme chef d’équipe, m’ont donné une vraie culture de la sécurité, le réflexe incident et le sens du client. ' +
   'Je recherche un poste de technicien support N1/N2 ou systèmes & réseaux pour évoluer ensuite vers la cybersécurité (SOC).';
 
-const skills = c.skills.groups
-  .filter((g) => g.icon !== 'users')
-  .map((g) => ({ ...g, items: g.items.filter((i) => !i.startsWith('CTF')) }));
+const skills = c.skills.groups.filter((g) => g.icon !== 'users');
 const soft = c.skills.groups.find((g) => g.icon === 'users');
 
 const experience = c.journey.experience
