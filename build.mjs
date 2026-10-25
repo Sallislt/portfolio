@@ -19,6 +19,7 @@ const ver = {
   css: await hashOf('./src/static/assets/css/style.css'),
   theme: await hashOf('./src/static/assets/js/theme.js'),
   main: await hashOf('./src/static/assets/js/main.js'),
+  fx: await hashOf('./src/static/assets/js/fx.js'),
 };
 
 // Sertifikatų skaičius skaičiuojamas automatiškai
@@ -146,7 +147,7 @@ function render(c) {
     .join('');
 
   const stats = c.stats
-    .map((s) => `<div class="stat reveal"><dt>${t(s.label)}</dt><dd>${t(s.value)}</dd></div>`)
+    .map((s) => `<div class="stat reveal"><dt>${t(s.label)}</dt><dd${/^\d+$/.test(String(s.value).replace('{certCount}', certCount)) ? ` data-count="${t(s.value)}"` : ''}>${t(s.value)}</dd></div>`)
     .join('');
 
   const storyCards = c.story.cards
@@ -271,12 +272,14 @@ function render(c) {
   <link rel="stylesheet" href="/assets/css/style.css?v=${ver.css}">
   <script src="/assets/js/theme.js?v=${ver.theme}"></script>
   <script src="/assets/js/main.js?v=${ver.main}" defer></script>
+  <script src="/assets/js/fx.js?v=${ver.fx}" defer></script>
   <script type="application/ld+json">${JSON.stringify(jsonLd(c, lang))}</script>
 </head>
 <body>
   <a class="skip" href="#main">${t(c.ui.skip)}</a>
 
   <header class="topbar" id="top">
+    <div class="progress" aria-hidden="true"></div>
     <div class="wrap topbar-inner">
       <a class="brand" href="${lang.path}" aria-label="${esc(site.name)}"><img class="brand-mark" src="/assets/img/logo-mark.svg" width="36" height="36" alt=""><span class="brand-name">Saulius Stankevicius</span></a>
       <nav class="nav" id="nav" aria-label="${t(c.ui.menu)}">
@@ -429,6 +432,7 @@ function render(c) {
       </div>
     </div>
   </footer>
+  <button class="to-top" type="button" id="to-top" aria-label="${t(c.ui.backTop)}" title="${t(c.ui.backTop)}">${icon('arrow')}</button>
 </body>
 </html>
 `;
